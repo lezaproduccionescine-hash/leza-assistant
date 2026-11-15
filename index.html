@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leza Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <main class="app">
+
+        <!-- ENCABEZADO -->
+        <header class="header">
+
+            <div class="brand">
+
+                <div class="assistant-icon">
+                    <img src="assets/logo.png" alt="Leza Producciones">
+                </div>
+
+                <div>
+                    <h1>LEZA ASSISTANT</h1>
+                    <p>
+                        <span class="status-dot"></span>
+                        Asistente virtual de Leza Producciones
+                    </p>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CHAT -->
+        <section class="chat-container">
+
+            <!-- MENSAJES -->
+            <div class="messages" id="messages">
+
+                <div class="message assistant-message">
+
+                    <div class="message-avatar">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+
+                    <div class="message-content">
+
+                        <p>
+                            ¡Hola! 👋 Soy <strong>Leza Assistant</strong>.
+                        </p>
+
+                        <p>
+                            Estoy acá para ayudarte con información sobre
+                            <strong>Leza Producciones</strong>.
+                        </p>
+
+                        <p>
+                            Podés preguntarme sobre <strong>Leza Fest</strong>,
+                            <strong>Leza TV</strong>,
+                            <strong>Leza Radio</strong>,
+                            <strong>Leza Socios</strong> y más.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PREGUNTAS SUGERIDAS -->
+            <div class="suggestions">
+
+                <button class="suggestion">
+                    ¿Cómo me anoto en Leza Fest?
+                </button>
+
+                <button class="suggestion">
+                    ¿Cómo me hago socio?
+                </button>
+
+                <button class="suggestion">
+                    ¿Cómo contacto con Leza?
+                </button>
+
+            </div>
+
+
+            <!-- INPUT -->
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Escribí tu pregunta..."
+                    autocomplete="off"
+                >
+
+                <button id="sendButton" title="Enviar">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PIE -->
+        <footer class="footer">
+
+            <span>LEZA ASSISTANT</span>
+
+            <span class="footer-separator">•</span>
+
+            <span>Leza Producciones</span>
+
+        </footer>
+
+    </main>
+
+    <script src="data/conocimientos.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
